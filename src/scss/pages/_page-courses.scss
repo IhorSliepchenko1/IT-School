@@ -1,0 +1,43 @@
+.section-courses {
+  margin-top: 100rem;
+  margin-bottom: 100rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--c-white);
+    max-width: 400rem;
+    padding: 30rem;
+    border: 1px solid;
+    box-shadow: 0px 5px 10px 0px var(--bg-backdrop);
+    transition: var(--transition);
+
+    &:hover {
+      box-shadow: 0px 0px 12px 5px var(--bg-btn-hover);
+    }
+  }
+
+  &__title {
+    font-size: 25rem;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-size: 18rem;
+    margin-bottom: 25px;
+  }
+}

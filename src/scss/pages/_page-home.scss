@@ -1,0 +1,201 @@
+.section-home {
+  &__info {
+    margin-top: 50rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50rem;
+    @include tablet {
+      padding-top: 75rem;
+    }
+  }
+
+  &__title {
+    max-width: 650rem;
+    font-size: 45rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  &__list {
+    margin-top: 100rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include tablet {
+      display: grid;
+      gap: 20rem;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    padding: 15rem;
+    border-radius: 15rem;
+    background-color: var(--c-white);
+    box-shadow: 0px 2px 4px var(--bg-shadow-item);
+
+    transition: var(--transition);
+
+    &:hover {
+      box-shadow: 0 20px 120px var(--bg-shadow-item-hover);
+    }
+  }
+  &__item-text {
+    font-size: 20rem;
+    font-weight: 700;
+  }
+
+  &__format {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__format-containers {
+    margin-top: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+
+    @include tablet {
+      display: grid;
+      gap: 20rem;
+    }
+  }
+  &__title-format,
+  &__title-job,
+  &__companies-title {
+    margin-top: 75rem;
+    font-size: 45rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    max-width: 450rem;
+    padding: 50rem;
+    background-color: var(--c-white);
+    border-radius: 20rem;
+    box-shadow: 0 20px 120px var(--bg-shadow-item-hover);
+    transition: var(--transition);
+  }
+
+  .icon-home {
+    padding-right: 20rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__study {
+    display: grid;
+    gap: 10rem;
+  }
+
+  &__type {
+    font-size: 25rem;
+  }
+
+  &__type-desc {
+    font-size: 15rem;
+    font-weight: 600;
+  }
+
+  &__title-job {
+    span {
+      color: var(--c-red);
+    }
+  }
+
+  &__job {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90rem;
+  }
+
+  &__guarantees-desc {
+    margin-top: 25rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+
+    @include tablet {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__guarantees-title {
+    font-size: 30rem;
+    font-weight: 600;
+  }
+
+  &__numbers {
+    font-size: 60rem;
+    font-weight: 800;
+    color: var(--c-red);
+  }
+
+  &__companies {
+    margin-bottom: 120rem;
+  }
+
+  &__img {
+    display: grid;
+    margin-top: 35rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 32rem;
+    grid-row-gap: 32rem;
+
+    @include tablet-small {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 10px;
+    }
+  }
+
+  &__image {
+    transition: var(--transition);
+    box-shadow: 0 10px 90px var(--bg-shadow-item-hover);
+
+    &:hover {
+      transform-origin: left top;
+      margin-top: -10px;
+      margin-left: 20px;
+      transition: margin-left 130ms;
+      transition: margin-top 130ms;
+    }
+  }
+
+  &__title-reviews {
+    font-size: 50rem;
+    text-align: center;
+    color: var(--c-red);
+    margin-bottom: 100rem;
+  }
+}
+.SliderSwiper {
+  margin-bottom: 100rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 37%);
+
+  @include tablet {
+    display: none;
+  }
+}

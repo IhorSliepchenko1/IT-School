@@ -1,0 +1,54 @@
+.course-form {
+  margin-top: 80rem;
+  margin-bottom: 100rem;
+  justify-content: center;
+  margin-inline: auto;
+
+  &__title {
+    font-size: 40rem;
+    text-align: center;
+  }
+
+  &__form {
+    justify-content: center;
+    display: grid;
+  }
+
+  &__btn {
+    margin-top: 50rem;
+    max-width: 150rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    font-size: 16rem;
+    padding-top: 15px;
+    padding-bottom: 10rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea,
+  select {
+    padding: 10px;
+    border: 1px solid var(--border-form);
+    width: 800rem;
+    border-radius: 10px;
+    font-size: 15rem;
+    @include mobile {
+      max-width: 500rem;
+    }
+  }
+
+  textarea {
+    max-height: 180rem;
+    min-height: 55px;
+    resize: vertical;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+}

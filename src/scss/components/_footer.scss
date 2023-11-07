@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid var(--border-footer);
+  background: var(--bg--footer);
+  width: 100%;
+}
+
+.footer-section {
+  display: grid;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    @include tablet-small {
+      display: grid;
+      gap: 40rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__ui {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50rem;
+  }
+
+  &__nav {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    @include tablet-small {
+      gap: 30px;
+    }
+  }
+
+  &__li {
+    display: flex;
+    align-items: center;
+    gap: 70rem;
+  }
+  &__a {
+    color: var(--c-black);
+    font-size: 20rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
+    &:hover {
+      color: var(--c-head-hover);
+    }
+  }
+
+  &__contacts {
+    display: grid;
+    gap: 15rem;
+    transition: var(--transition);
+    @include tablet-small {
+      justify-content: center;
+      gap: 40px;
+    }
+
+    a {
+      color: var(--c-a-footer);
+      font-size: 20rem;
+      font-weight: 700;
+      &:hover {
+        color: var(--c-a-footer-hover);
+      }
+    }
+  }
+
+  &__title {
+    color: var(--c-black);
+    font-size: 20rem;
+    font-weight: 600;
+  }
+
+  &__contacts-value {
+    a {
+      color: var(--c-black);
+      font-size: 17px;
+
+      &:hover {
+        color: var(--c-head-hover);
+      }
+    }
+  }
+
+  &__numbers {
+    padding-top: 15px;
+    display: grid;
+    gap: 20px;
+  }
+
+  &__socials {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rem;
+    border-top: 1px solid var(--border-footer-sec);
+
+    p {
+      color: var(--c-black);
+      font-size: 25rem;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 20rem;
+      padding-bottom: 35rem;
+    }
+  }
+
+  &__socials-ul {
+    display: flex;
+    gap: 80rem;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-small {
+      gap: 50rem;
+    }
+  }
+
+  &__copyright {
+    color: var(--c-black);
+    text-align: center;
+    font-weight: 600;
+
+    font-size: 22rem;
+    padding: 50rem 0 5rem 0;
+  }
+
+  .info-contact {
+    display: grid;
+    gap: 10px;
+  }
+}
+
+.social-icon {
+  transition: var(--transition);
+
+  &:hover {
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}

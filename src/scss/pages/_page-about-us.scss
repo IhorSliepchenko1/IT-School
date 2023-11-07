@@ -1,0 +1,105 @@
+.section-about {
+  margin-top: 65rem;
+  margin-bottom: 80rem;
+
+  &__info {
+    margin-top: 40rem;
+    margin-bottom: 55rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 35rem;
+    text-align: center;
+    padding-bottom: 20rem;
+  }
+
+  &__desc {
+    font-size: 30rem;
+    text-align: center;
+    @include tablet {
+      font-size: 20rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50rem;
+    margin-bottom: 100rem;
+    @include tablet-small {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__container {
+    display: grid;
+    justify-content: center;
+    border-radius: 40px;
+    background: var(--c-white);
+    max-width: 600rem;
+    padding: 40rem;
+    border: 1px solid;
+    box-shadow: 0px 2px 8px 5px var(--bg-backdrop);
+    transition: var(--transition);
+    text-align: center;
+    &:hover {
+      box-shadow: 0px 2px 8px 5px var(--bg-header-fixed);
+    }
+
+    @include tablet {
+      margin-inline: auto;
+      
+    }
+  }
+
+  &__img {
+    margin-inline: auto;
+
+    width: 400rem;
+    height: 250rem;
+    border-radius: 20px;
+    @include tablet {
+      width: 300rem;
+      height: 200rem;
+    }
+
+    img {
+      width: 400rem;
+      height: 250rem;
+      border-radius: 20px;
+      @include tablet {
+        width: 300rem;
+        height: 200rem;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 30rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    @include tablet {
+      font-size: 25rem;
+    }
+  }
+
+  &__specialization {
+    font-size: 25rem;
+    font-weight: 600;
+    @include tablet {
+      font-size: 20rem;
+    }
+  }
+
+  &__bio {
+    margin-top: 20rem;
+    font-size: 20rem;
+    @include tablet {
+      font-size: 15rem;
+      max-width: 370rem;
+    }
+  }
+}

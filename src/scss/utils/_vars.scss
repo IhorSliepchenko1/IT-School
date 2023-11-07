@@ -1,0 +1,35 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --ff: "Manrope";
+
+  --transition: 0.3s all ease-in-out;
+
+  --c-white: #fff;
+  --c-black: #000000;
+  --c-a-footer: #05230f;
+  --c-a-footer-hover: #040404;
+  --c-head-hover: #a19696;
+  --c-red: red;
+  --c-hover-bth: rgba(5, 204, 72, 0.548);
+
+  --border-footer: #0548ff;
+  --border-footer-sec: #7e8982;
+  --border-form: #656262;
+
+  --bg-body: #e0f4a4;
+  --bg-header: rgba(187, 230, 32, 0.838);
+  --bg--footer: rgba(169, 239, 116, 0.639);
+  --bg-burger: rgb(147, 224, 88) 0;
+  --bg-btn: #ffa600;
+  --bg-btn-hover: #ff8c00;
+  --bg-header-fixed: rgba(169, 239, 116, 0.984);
+  --bg-backdrop: rgba(0, 0, 0, 0.674);
+  --bg-slider: rgba(0, 255, 115, 0.219);
+  --bg-shadow-item: rgba(0, 0, 0, 1);
+  --bg-shadow-item-hover: rgba(0, 0, 0, 0.5);
+}

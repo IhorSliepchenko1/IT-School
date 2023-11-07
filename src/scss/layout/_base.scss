@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-body);
+  font-family: var(--ff);
+  color: var(--c-text);
+}
+
+.wrapper {
+  margin-inline: auto;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1400px + 40px);
+  margin-inline: auto;
+  padding: 35px;
+}

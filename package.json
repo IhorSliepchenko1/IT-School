@@ -1,0 +1,64 @@
+{
+  "name": "my-vue-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@babel/helper-remap-async-to-generator": "^7.22.17",
+    "@babel/plugin-transform-class-properties": "^7.22.5",
+    "@mdi/font": "^7.2.96",
+    "aos": "^2.3.4",
+    "atpl": "^0.9.3",
+    "core-js": "^3.8.3",
+    "swiper": "^10.2.0",
+    "vue": "^3.2.13",
+    "vue-cli-plugin-vuetify": "^2.5.8",
+    "vue-router": "^4.2.4",
+    "vuetify": "^3.3.16",
+    "webpack-plugin-vuetify": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^6.0.0",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "style-resources-loader": "^1.4.1",
+    "vue-cli-plugin-style-resources-loader": "~0.1.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "ignore-optional": [
+      "deprecated-package"
+    ]
+  }
+}

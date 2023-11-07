@@ -1,0 +1,19 @@
+.v-btn.v-btn--density-default {
+  background: var(--bg-btn);
+  color: var(--c-white);
+  transition: var(--transition);
+  font-size: 15rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 25rem;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  max-width: 250rem;
+  box-shadow: 0 0 20px var(--c-red);
+
+  &:hover {
+    background: var(--bg-btn-hover);
+    box-shadow: 0 0 20px var(--c-hover-bth);
+  }
+}
